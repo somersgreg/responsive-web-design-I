@@ -1,3 +1,297 @@
 /* Use your own code or past solution for Great Idea Web Page CSS here! */
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
 
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
 
+/* Set every element's box-sizing to border-box */
+* {
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100%;
+    font-family: 'Titillium Web', sans-serif;
+}
+
+p {
+	font-family: 'Titillium Web', sans-serif;
+	text-align: justify;
+}
+
+h1, h2, h3, h4, h5 {
+    font-family: 'Bangers', cursive;
+    letter-spacing: 1px;
+    margin-bottom: 15px;
+}
+
+a {
+	text-decoration: none;
+	color: gray;
+}
+
+body{
+	width: 900px;
+	margin: 20px auto;
+}
+
+header {
+	display: flex;
+}
+
+header div{
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	justify-content: space-around;
+}
+
+header div nav {
+	display: flex;
+	width: 700px;
+	justify-content: space-around;
+}
+
+.cta {
+	display: flex;
+	justify-content: space-around;
+	margin-top: 60px;
+}
+
+.cta div {
+	width: 40%;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	font-size: 70px;
+}
+
+.cta div a {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	font-size: 1rem;
+	width: 175px;
+	height: 35px;
+	color: black;
+	border: 1px solid black;
+}
+
+.top-section {
+	margin-top: 75px;
+	/* margin-bottom: 40px; */
+	border-top: 1px solid black;
+	padding:3%;
+	padding-top: 40px;
+	display: flex;
+	justify-content: space-between;
+}
+
+.top-section article {
+	width: 48%;
+}
+
+.mid-section{
+	padding:3%;
+}
+
+.bottom-section {
+	/* margin-top: 40px; */
+	padding-bottom: 40px;
+	border-bottom: 1px solid black;
+	/* margin-bottom: 40px; */
+	display: flex;
+	justify-content: space-between;
+	padding:3%
+}
+
+.bottom-section article {
+	width: 30%;
+}
+
+footer {
+	padding-bottom: 40px;
+}
+
+footer .copyright{
+	text-align: center;
+}
+
+footer section {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-around;
+	height: 200px;
+	width: 200px;
+}
+
+.full-width-section {
+	padding-bottom: 50px;
+	border-bottom: 1px solid black;
+	margin-bottom: 40px;
+}
+
+.full-width-section img {
+	margin-bottom: 40px;
+}
+.services-section {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	border-bottom: 2px solid black;
+	margin-bottom: 40px;
+
+}
+.services-article {
+	width: 425px;
+	height: 250px;
+	background-color: #eeeeee;
+	border: 1px solid black;
+	padding: 20px;
+	margin-bottom: 40px;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-around;
+}
+
+.services-article a {
+	border: 1px solid black;
+	border-radius: 5px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 150px;
+	height: 30px;
+	background-color: white;
+	color: black;
+	font-size: .75rem;
+}
+
+.top-section img {
+	width: 425px;
+}
+
+li {
+	list-style-type: square;
+	margin: 20px;
+}
+
+/*********MEDIA QUERIES***********/
+@media (max-width: 800px) {
+
+	header {
+        display: flex;
+		align-items: center;
+		flex-direction:column-reverse;
+	}
+	nav {
+		display: flex;
+	}
+    nav a {
+        /* display: flex; */
+        width: 100%;
+        justify-content: space-evenly;
+        align-items: flex-end;
+    }
+    .cta img {
+    display: none;
+    }
+    .cta {
+    align-items: center;
+    flex-direction:column;
+    }
+}/*this closes max-width 800*/
+
+@media (max-width: 500px) {
+
+	header {
+        display: flex;
+		align-items: center;
+		flex-direction:column-reverse;
+	}
+	div.logo {
+		padding: 10px;
+	}
+	div nav a{
+		padding: 10px;
+	}
+    .cta {
+    	align-items: center;
+    	flex-direction:column;
+    }
+    nav {
+    	display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+    }
+	nav a {
+		display: flex;
+		border-top: 1px solid rgb(43, 7, 7);
+		border-bottom: 1px solid black;
+		width: 100%;
+	}
+	section {
+		display: flex;
+		flex-direction: column;
+		flex-wrap:wrap;
+	}
+	.top-section article {
+		width: 90%;
+	}
+	.mid-section{
+		display: flex;
+		
+	}
+	.bottom-section article{
+		display: flex;
+		flex-direction: column;
+		width: 90%;
+
+	}
+}
