@@ -79,6 +79,10 @@ body{
 	margin: 20px auto;
 }
 
+header {
+	display: flex;
+}
+
 header div{
 	display: flex;
 	flex-direction: row;
