@@ -124,7 +124,7 @@ header div nav {
 
 .top-section {
 	margin-top: 75px;
-	margin-bottom: 40px;
+	/* margin-bottom: 40px; */
 	border-top: 1px solid black;
 	padding:3%;
 	padding-top: 40px;
@@ -261,7 +261,6 @@ li {
     .cta img{
         width: 75%;
     }
-
     nav {
     display: flex;
     flex-direction: column;
@@ -272,14 +271,28 @@ li {
 		border-bottom: 1px solid black;
 		align-items: center;
 		width: 90px;
-}
-.top-content{
+	}
+	/* .top-content{
 	width: 5%;
-}
-section {
+	} */
+	section {
+	display: flex;
 	flex-direction: column;
 	flex-wrap:wrap;
 	justify-content: center;
 	align-items: center;
-}
+	}
+	.top-section article {
+		width: 90%;
+	}
+	.bottom-section article{
+		display: flex;
+		flex-direction: column;
+		/* justify-content: center;
+		align-items: center; */
+		/* margin: 0;
+		padding: 0; */
+		width: 90%;
+
+	}
 }
